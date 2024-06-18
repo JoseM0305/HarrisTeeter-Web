@@ -1,0 +1,49 @@
+body {
+    background: url(img/Backgrounds/planet-earth-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.outline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(4, 53, 64, .7) 50%, transparent);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.outline h2 {
+    text-align: center;
+    height: 95px;
+    line-height: 95px;
+    width: 100%;
+    font-size: 2.3em;
+    font-weight: 400;
+    color: #fff;
+}
+
+.map iframe {
+    outline: none;
+    width: 800px;
+    height: 400px;
+}
+
+@media (width < 900px) {
+
+    body {
+        background-position: center;
+    }
+    
+    .outline {
+        width: 80vw;
+    }
+
+    .map iframe {
+        width: 82vw;
+        height: 90vw;
+    }
+}

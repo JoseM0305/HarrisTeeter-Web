@@ -1,0 +1,129 @@
+.input-form {
+    display: flex;
+    background-color: rgba(0, 0, 0, .500);
+    width: 600px;
+    height: 50px;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.input-form input {
+    width: 100%;
+    background: transparent;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    font-size: 1.4em;
+    color: white;
+}
+
+.input-form .input-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 50px;
+    background-color: #C5C5C5ed;
+    cursor: pointer;
+}
+
+.input-form .input-search ion-icon {
+    font-size: 2.5em;
+}
+
+.search-button {
+    position: absolute;
+    display: none;
+    width: 70px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.search-button ion-icon {
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+@media (width < 1200px) {
+    .input-form {
+        display: none;
+    }
+
+    .search-button {
+        display: block;
+        right: 130px;
+    }
+}
+
+@media (width < 1005px) {
+
+    .search-button {
+        display: block;
+        right: 80px;
+    }
+}
+
+.product-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0 60px;
+    width: 100%;
+}
+
+.product-search h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+    margin: 0 0 40px;
+}
+
+.products {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.products div {
+    width: 220px;
+    height: 220px;
+    border: solid;
+    margin: 10px;
+}
+
+.products div img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (width < 2000px) {
+
+    .nav-opt {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, .5);
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-opt a {
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-toggle:checked ~ .nav-opt {
+        display: flex;
+    }
+}
